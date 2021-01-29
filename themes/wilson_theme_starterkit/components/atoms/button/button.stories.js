@@ -34,7 +34,7 @@ export const secondary_button = () => (
             '#url': {
               isExternal: 'isxternal'
             },
-            '#title': 'Button Title'
+            '#title': 'Secondary Button Title'
           }
         },
       ],
