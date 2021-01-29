@@ -19,6 +19,7 @@
         "drupal/admin_toolbar": "^2.4",
         "drupal/block_field": "^1.0@RC",
         "drupal/color_field": "^2.4",
+        "drupal/components": "^2.2",
         "drupal/config_split": "^1.7",
         "drupal/default_content": "^2.0@alpha",
         "drupal/devel": "^4.0",
