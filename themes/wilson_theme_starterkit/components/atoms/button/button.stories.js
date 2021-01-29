@@ -1,11 +1,11 @@
 export default { title: 'Buttons' };
 
-import block from './button.twig';
+import button from './button.twig';
 import '../../../css/styles.css'
 import drupalAttribute from 'drupal-attribute'
 
 export const default_button = () => (
-    block({
+    button({
       attributes: new drupalAttribute(),
       type: 'primary',
       items: [
@@ -23,7 +23,7 @@ export const default_button = () => (
 );
 
 export const secondary_button = () => (
-    block({
+    button({
       attributes: new drupalAttribute(),
       type: 'secondary',
       items: [
