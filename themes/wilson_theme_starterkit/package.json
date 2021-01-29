@@ -36,6 +36,8 @@
     "twig-loader": "^0.5.5"
   },
   "dependencies": {
+    "@storybook/addons": "^6.1.15",
+    "@storybook/theming": "^6.1.15",
     "autoprefixer": "^10.2.1",
     "postcss": "^8.2.4"
   },
