@@ -4,21 +4,13 @@ import button from './button.twig';
 import '../../../css/styles.css'
 import drupalAttribute from 'drupal-attribute'
 
-export const default_button = () => (
+export const primary_button = () => (
     button({
       attributes: new drupalAttribute(),
       type: 'primary',
-      items: [
-        {
-          content: {
-            '#url': {
-              isExternal: 'isxternal'
-            },
-            '#title': 'Button Title'
-          }
-        },
-      ],
-
+      href: '#',
+      external: true,
+      button_label: 'Primary Button'
     })
 );
 
@@ -26,16 +18,8 @@ export const secondary_button = () => (
     button({
       attributes: new drupalAttribute(),
       type: 'secondary',
-      items: [
-        {
-          content: {
-            '#url': {
-              isExternal: 'isxternal'
-            },
-            '#title': 'Secondary Button Title'
-          }
-        },
-      ],
-
+      href: '#',
+      external: false,
+      button_label: 'Secondary Button'
     })
 );

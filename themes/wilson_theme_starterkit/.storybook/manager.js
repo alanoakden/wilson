@@ -1,6 +1,6 @@
 import { addons } from '@storybook/addons';
-import wilsonStorybookTheme from './wilsonStorybookTheme';
+import exampleStorybookTheme from './exampleStorybookTheme';
 
 addons.setConfig({
-  theme: wilsonStorybookTheme,
+  theme: exampleStorybookTheme,
 });

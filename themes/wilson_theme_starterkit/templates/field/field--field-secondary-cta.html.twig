@@ -1,4 +1,8 @@
-{% include "@storybook/atoms/button/button.twig" with {
-  "type": "secondary",
-  "items": items
-} %}
+{% for item in items %}
+  {% include "@storybook/atoms/button/button.twig" with {
+    "type": "secondary",
+    "href": item.content['#url'],
+    "external": item.content['#url'].isExternal,
+    "button_label": item.content['#title']
+  } %}
+{% endfor %}

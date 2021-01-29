@@ -1,3 +1,2 @@
-{% for item in items %}
-  <a href="{{ item.content['#url'] }}" class="btn {{'btn--' ~ type}} {{item.content['#url'].isExternal ? 'is-external'}}" {% if item.content['#url'].isExternal %} target="_blank"{% endif %}>{{ item.content['#title'] }}</a>
-{% endfor %}
+<a href="{{ href }}" class="btn {{ 'btn--' ~ type }} {{ external ? 'is-external' }}" {% if external %} target="_blank"{% endif %}>{{ button_label }}</a>
+
