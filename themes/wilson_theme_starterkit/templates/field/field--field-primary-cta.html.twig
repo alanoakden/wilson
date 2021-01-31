@@ -1,9 +1,9 @@
-{% set classes = [
-  'btn',
-  'btn--primary',
-  item.content['#url'].isExternal ? 'is-external',
-] %}
-
+{{ attach_library('wilson_theme_starterkit/button') }}
 {% for item in items %}
-  <a href="{{ item.content['#url'] }}" {{ create_attribute({'class': classes}) }}{% if item.content['#url'].isExternal %} target="_blank"{% endif %}>{{ item.content['#title'] }}</a>
+  {% include "@storybook/atoms/button/button.twig" with {
+    "type": "primary",
+    "href": item.content['#url'],
+    "external": item.content['#url'].isExternal,
+    "button_label": item.content['#title']
+  } %}
 {% endfor %}

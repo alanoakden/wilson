@@ -13,6 +13,7 @@
 // Tailwind components and utilities to allow this CSS to be overridden with a
 // Tailwind class if needed.
 @import "custom/*";
+@import "../components/**/**/*.scss";
 
 // Import Tailwind components & utilities.
 @tailwind components;

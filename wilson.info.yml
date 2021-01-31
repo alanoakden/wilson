@@ -9,6 +9,7 @@ install:
   - block_content
   - breakpoint
   - big_pipe
+  - components
   - config
   - contextual
   - help

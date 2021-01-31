@@ -42,6 +42,9 @@ cd web/profiles/custom/wilson/themes/wilson_theme_starterkit
 npm install && gulp build
 drush cr
 ```
+The theme also provides Storybook integration by default. [Read more about Storybook with Drupal](https://medium.com/@askibinski/integrating-storybook-with-drupal-ddabfc6c2f9d).
+
+In order to run the Storybook and view components locally, enter `npm run storybook`.
 
 ## Drupal quick start (optional)
 

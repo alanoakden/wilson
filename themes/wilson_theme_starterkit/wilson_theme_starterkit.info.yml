@@ -28,3 +28,8 @@ regions:
   footer_col_four: Footer Column Four
   off_canvas: Off Canvas
   hidden: Hidden
+
+component-libraries:
+  storybook:
+    paths:
+      - components
