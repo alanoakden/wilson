@@ -1,6 +1,7 @@
 export default { title: 'Buttons' };
 
 import button from './button.twig';
+import './button.css';
 import '../../../css/styles.css'
 import drupalAttribute from 'drupal-attribute'
 

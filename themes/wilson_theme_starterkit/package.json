@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Packages required for the Wilson Theme Starterkit.",
   "devDependencies": {
+    "@babel/cli": "^7.12.10",
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
     "@storybook/html": "^6.1.15",
+    "babel-plugin-drupal-behaviors": "^0.1.1",
     "drupal-attribute": "^1.0.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -24,6 +26,7 @@
     "gulp-terser": "^1.2.0",
     "gulp-watch": "^5.0.1",
     "gulp4-run-sequence": "^1.0.1",
+    "mini-css-extract-plugin": "^0.8.0",
     "postcss-import": "^14.0.0",
     "postcss-loader": "^4.1.0",
     "stylelint": "^13.6.1",
@@ -33,15 +36,21 @@
     "tailwindcss-children": "^2.1.0",
     "twig": "^1.15.4",
     "twig-drupal-filters": "^3.1.2",
-    "twig-loader": "^0.5.5"
+    "twig-loader": "^0.5.5",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-fix-style-only-entries": "^0.4.0"
   },
   "dependencies": {
     "@storybook/addons": "^6.1.15",
     "@storybook/theming": "^6.1.15",
     "autoprefixer": "^10.2.1",
+    "glob": "^7.1.6",
     "postcss": "^8.2.4"
   },
   "scripts": {
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "storybook-css": "webpack -d --config ./webpack/webpack.config.js --display-error-details",
+    "storybook-js": "npx babel components -w -d dist/components --ignore 'components/**/*.stories.js' --presets=@babel/preset-env,babel-preset-minify --plugins=babel-plugin-drupal-behaviors"
   }
 }
