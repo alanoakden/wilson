@@ -49,8 +49,8 @@
     "postcss": "^8.2.4"
   },
   "scripts": {
-    "storybook": "start-storybook",
+    "storybook": "start-storybook -p 9001 -s ./css",
     "storybook-css": "webpack -d --config ./webpack/webpack.config.js --display-error-details",
-    "storybook-js": "npx babel components -w -d dist/components --ignore 'components/**/*.stories.js' --presets=@babel/preset-env,babel-preset-minify --plugins=babel-plugin-drupal-behaviors"
+    "storybook-js": "npx babel components -w -d js/components --ignore 'components/**/*.stories.js' --presets=@babel/preset-env,babel-preset-minify --plugins=babel-plugin-drupal-behaviors"
   }
 }

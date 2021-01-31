@@ -275,7 +275,7 @@ function _wilson_theme_starterkit_background_styles($imageUri, $elementId, $styl
 
 function wilson_theme_starterkit_library_info_build() {
   $extensions = ['css', 'js'];
-  $directory = 'themes/wilson_theme_starterkit/components';
+  $directory = 'themes/wilson_theme_starterkit/js/components';
   $extensions = array_map('preg_quote', $extensions);
   $extensions = implode('|', $extensions);
   $file_scan = Drupal::service('file_system')->scanDirectory($directory, "/{$extensions}$/");
